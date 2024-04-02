@@ -1,6 +1,6 @@
 # Upstream project has requested we use a mirror as the main URL
 # https://github.com/Homebrew/legacy-homebrew/pull/21419
-class XzAT529 < Formula
+class Xz < Formula
   desc "General-purpose data compression with high compression ratio"
   homepage "https://tukaani.org/xz/"
   # The archive.org mirror below needs to be manually created at `archive.org`.
