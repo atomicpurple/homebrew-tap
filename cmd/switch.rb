@@ -19,7 +19,7 @@ module Homebrew
         Symlink all of the specified <version> of <formula>'s installation into Homebrew's prefix.
       EOS
 
-      named 2
+      named_args number: 2
       hide_from_man_page!
     end
   end
@@ -32,7 +32,7 @@ module Homebrew
 
     odie "#{name} not found in the Cellar." unless rack.directory?
 
-    odeprecated "`brew switch`", "`brew link` @-versioned formulae"
+    # odeprecated "`brew switch`", "`brew link` @-versioned formulae"
 
     versions = rack.subdirs
                    .map { |d| Keg.new(d).version }
